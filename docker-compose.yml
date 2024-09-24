@@ -1,0 +1,14 @@
+services:
+  actuator:
+    image: mysql:9.0.1
+
+
+    environment:
+    ports:
+      - 3309:3306
+  adminer:
+    image: adminer
+    container_name:
+    restart: always
+    ports:
+      - 9180:8080
